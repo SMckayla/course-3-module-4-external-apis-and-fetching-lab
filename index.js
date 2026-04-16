@@ -14,3 +14,5 @@ button.addEventListener("click", () => {
 // Adding action to get user input
 const state = input.value;
 
+//Fetching
+fetch(`https://api.weather.gov/alerts/active?area=${state}`)
