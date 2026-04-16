@@ -26,4 +26,8 @@ fetch(`https://api.weather.gov/alerts/active?area=${state}`)
 display.innerHTML = `
   <h3>Alerts for ${state}: ${alerts.length}</h3>
 `;
+
+//Adding paragraph for each alert
 alerts.forEach(alert => {
+const p = document.createElement("p");
+p.textContent = alert.properties.headline;
