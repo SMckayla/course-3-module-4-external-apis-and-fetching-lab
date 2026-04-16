@@ -34,11 +34,15 @@ p.textContent = alert.properties.headline;
 
 //Show alert on webpage
 display.appendChild(p);
+});
 
 //Error handling
-.catch(err => {
-    errorDiv.textContent = err.message;
-errorDiv.classList.remove("hidden");
+errorDiv.textContent = "";
+      errorDiv.classList.add("hidden");
+      input.value = "";
+    })
+    .catch(err => {
+      errorDiv.textContent = err.message;
+      errorDiv.classList.remove("hidden");
+    });
 });
-});
- });
