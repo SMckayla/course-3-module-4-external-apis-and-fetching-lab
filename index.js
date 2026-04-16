@@ -31,3 +31,6 @@ display.innerHTML = `
 alerts.forEach(alert => {
 const p = document.createElement("p");
 p.textContent = alert.properties.headline;
+
+//Show alert on webpage
+display.appendChild(p);
