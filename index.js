@@ -16,3 +16,14 @@ const state = input.value;
 
 //Fetching
 fetch(`https://api.weather.gov/alerts/active?area=${state}`)
+  .then(res => res.json())
+ .then(data => {
+    display.innerHTML = "";
+    const alerts = data.features;
+ display.innerHTML = `
+  <h3>Alerts for ${state}: ${alerts.length}</h3>
+`;
+display.innerHTML = `
+  <h3>Alerts for ${state}: ${alerts.length}</h3>
+`;
+alerts.forEach(alert => {
