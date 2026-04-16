@@ -10,4 +10,7 @@ const errorDiv = document.getElementById("error-message");
 
 //Adding click button
 button.addEventListener("click", () => {
-    
+
+// Adding action to get user input
+const state = input.value;
+
