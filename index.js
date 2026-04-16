@@ -34,3 +34,11 @@ p.textContent = alert.properties.headline;
 
 //Show alert on webpage
 display.appendChild(p);
+
+//Error handling
+.catch(err => {
+    errorDiv.textContent = err.message;
+errorDiv.classList.remove("hidden");
+});
+});
+ });
